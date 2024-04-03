@@ -26,7 +26,7 @@ if 'first_time' not in st.session_state:
 st.title(":red[QuizTube] — Watch. Learn. Quiz. 🧠", anchor=False)
 
 with st.form("user_input"):
-    YOUTUBE_URL = st.text_input("Enter the YouTube video link:", value="https://youtu.be/bcYwiwsDfGE?si=qQ0nvkmKkzHJom2y")
+    YOUTUBE_URL = st.text_input("Enter the YouTube video link:")
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") 
     submitted = st.form_submit_button("Generate my quiz!")
 
